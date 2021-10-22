@@ -1,0 +1,18 @@
+package exercise4;
+
+import java.math.BigInteger;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
+public class PrimeStream_A {
+
+	public static void main(String[] args) {
+		final Stream<Integer> primes = Stream.iterate(2, n -> primeNumbers(n++) ? n : null); 
+		System.out.println(primes.limit(2).collect(Collectors.toList()));	
+	}
+	
+	public static boolean primeNumbers(int n) {
+		return IntStream.rangeClosed(2, BigInteger::nextProbablePrime);
+	}
+}

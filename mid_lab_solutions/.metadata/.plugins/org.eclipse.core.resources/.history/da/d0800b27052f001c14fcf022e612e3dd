@@ -1,0 +1,16 @@
+package enumcheck;
+
+public class Connection {
+
+	private static Connection INSTANCE;
+	
+	private Connection() {
+		if(INSTANCE != null) {
+			INSTANCE = new Connection();
+		}
+	}
+	
+	public Connection getConnection() {
+		return INSTANCE;
+	}
+}

@@ -1,0 +1,13 @@
+package probC;
+
+public class Salaried extends Employee{
+
+	private int hourlyWage;
+	private int hoursPerWeek;
+	
+	@Override
+	Double calcGrossPay(int month, int year) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

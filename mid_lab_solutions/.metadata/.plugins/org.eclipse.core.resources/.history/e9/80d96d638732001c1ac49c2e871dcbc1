@@ -1,0 +1,19 @@
+package prob3;
+
+import java.util.function.Predicate;
+
+import helperclasses.LibrarySystemException;
+
+public interface MyPredicateFunctionWithException<T> {
+	boolean test(T t) throws LibrarySystemException;
+	
+	public static <T> Predicate<T> wrapper(MyGenericPredicateWithException<T> f){
+		return x -> {
+			try {
+				return f.test(x);
+			}catch(LibrarySystemException e) {
+				throw new RuntimeException("Exception thrown");
+			}
+		};
+	}
+}

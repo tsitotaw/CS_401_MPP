@@ -1,0 +1,19 @@
+package exceptions_practice;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println(scale(Arrays.asList(1,2,3,4,5), 4));
+	}
+	
+	public static List<Integer> scale(List<Integer> values, Integer factor) {
+	    return values.stream()
+	        .map(n -> n / factor)
+	        .collect(Collectors.toList());
+	}
+
+}

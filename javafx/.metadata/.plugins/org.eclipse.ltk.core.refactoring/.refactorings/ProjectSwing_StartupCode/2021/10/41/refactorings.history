@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;AllBookIdsWindow.java&apos; to &apos;ProjectSwing_StartupCode/src/librarysystem&apos;&#x0A;- Original project: &apos;ProjectSwing_StartupCode&apos;&#x0A;- Destination element: &apos;ProjectSwing_StartupCode/src/librarysystem&apos;&#x0A;- Original element: &apos;librarysystem.AllBookIdsWindow.java&apos;" description="Copy compilation unit" destination="/src&lt;librarysystem" element1="/src&lt;librarysystem{AllBookIdsWindow.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1633404496512" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,26 @@
+package methodreferences;
+
+import java.util.function.Supplier;
+import java.util.stream.Stream;
+
+public class ConstructorReference {
+
+	public static void main(String[] args) {
+		Stream<Person> func = Stream.generate(Person::new);
+		func
+			.limit(10)
+			.forEach(System.out::println);
+	}
+
+}
+
+class Person {
+	
+	Person(){
+		getName();
+	}
+	void getName() {
+		System.out.println("HEllo Person");
+	}
+	
+}

@@ -1,0 +1,24 @@
+package genericClasses;
+
+public class MyDictionary<K extends Number, V> implements IDictionary<K, V> {
+
+	private <K extends Number> key;
+	private V value;
+	
+	public MyDictionary(K key, V value) {
+		this.key = key;
+		this.value = value;
+	}
+
+	@Override
+	public <K extends Number> K getKey() {
+		return this.key;
+	}
+
+	@Override
+	public V getValue(K key) {
+		// TODO Auto-generated method stub
+		return this.value;
+	}
+
+}

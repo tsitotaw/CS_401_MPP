@@ -1,0 +1,8 @@
+package part2;
+
+public class Rectangle {
+	public double computeArea() {
+		
+		return 0.0;
+	}	
+}

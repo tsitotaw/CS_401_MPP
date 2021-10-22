@@ -1,0 +1,15 @@
+package part1;
+
+public abstract class Duck {
+
+	FlyBehavior ﬂyBehavior;
+	QuackBehavior quackBehavior;
+	public Duck() {
+	}
+	
+	public abstract void display();
+	public void performFly() {
+	ﬂyBehavior.ﬂy();
+	}
+	
+}

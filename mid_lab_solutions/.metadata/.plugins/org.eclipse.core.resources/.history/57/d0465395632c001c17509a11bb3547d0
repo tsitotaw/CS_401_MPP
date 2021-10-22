@@ -1,0 +1,10 @@
+package streams.intermediate;
+
+public class MyFilter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

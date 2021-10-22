@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/home/tfisseha/Documents/MIU Class Files/CS_401_MPP/Labs/lesson11"/>
+			<item value="/home/tfisseha/Documents/MIU Class Files/CS_401_MPP/final exam/JulyPracticeExam"/>
+			<item value="/home/tfisseha/Documents/MIU Class Files/CS_401_MPP/Lab09_Questions_Review"/>
+			<item value="/home/tfisseha/Documents/MIU Class Files/CS_401_MPP/Lecture_Code/lesson10"/>
+			<item value="/home/tfisseha/Documents/MIU Class Files/CS_401_MPP/final exam/MPP"/>
+			<item value="/home/tfisseha/Documents/MIU Class Files/CS_401_MPP/final exam/Corroza_Quiz/QuizSolutions2019"/>
+			<item value="/home/tfisseha/Documents/MIU Class Files/CS_401_MPP/InClassExercises"/>
+			<item value="/home/tfisseha/Documents/MIU Class Files/CS_401_MPP/Lecture_Code/lesson7"/>
+			<item value="/home/tfisseha/Desktop/mid_lab_solutions"/>
+			<item value="/home/tfisseha/Documents/MIU Class Files/CS_401_MPP/mid_lab_solutions"/>
+		</list>
+	</section>
+</section>

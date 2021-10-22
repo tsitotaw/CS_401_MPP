@@ -1,0 +1,36 @@
+package upperbound;
+
+import java.util.List;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Manager man = new Manager("Paul");
+		Employee emp = new Employee("Assad");		
+		Person per = new Person("Sew");
+		
+		System.out.println(countOccurancesGeneric(new Person[] {new Person("sample"),new Person("sample"),new Person("sample")}, "sample"));
+	}
+	
+	private static <T extends Person> int countOccurancesGeneric(T[] arr, T target) {
+		int count=0;
+		
+		if(target == null) {
+			for(T item : arr) {
+				if(item == null) {
+					count++;
+				}
+			}
+		}
+		else {
+			for(T item : arr) {
+				if(item.getName() == target) {
+					count++;
+				}
+			}
+		}
+		
+		return count;
+	}
+
+}

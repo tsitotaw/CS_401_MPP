@@ -1,0 +1,9 @@
+package first;
+
+public class Main {
+
+	public static void main(String[] args) {
+		SimplePair<Integer, String> myPairs = SimplePair<Integer, String>(1, "sample");
+	}
+
+}

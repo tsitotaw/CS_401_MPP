@@ -1,0 +1,30 @@
+package prob4;
+
+public class Condo {
+	private double rent;
+	private int numFloors;	
+	
+	public Condo(double rent, int numFloors) {
+		super();
+		this.rent = rent;
+		this.numFloors = numFloors;
+	}
+	
+	public double getRent() {
+		return rent;
+	}
+	public void setRent(double rent) {
+		this.rent = rent;
+	}
+	public int getNumFloors() {
+		return numFloors;
+	}
+	public void setNumFloors(int numFloors) {
+		this.numFloors = numFloors;
+	}
+	
+	@Override
+	public String toString() {
+		return "House [rent=" + rent + ", lotSize=" + lotSize + "]";
+	}
+}

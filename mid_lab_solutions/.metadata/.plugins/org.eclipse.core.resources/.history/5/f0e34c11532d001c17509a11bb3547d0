@@ -1,0 +1,10 @@
+package streamreuse;
+
+public class functionOption {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

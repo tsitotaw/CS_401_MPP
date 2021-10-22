@@ -1,0 +1,9 @@
+package intermediateoperations;
+
+public class distinct {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

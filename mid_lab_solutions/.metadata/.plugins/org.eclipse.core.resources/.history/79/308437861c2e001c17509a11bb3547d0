@@ -1,0 +1,14 @@
+package subtyping;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Integer[] numsI = { 2, 3, 4 };
+
+		Number[] nums2 = numsI;
+		
+		System.out.println(numsI);
+	}
+
+}

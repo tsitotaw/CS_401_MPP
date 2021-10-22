@@ -1,0 +1,23 @@
+package part3;
+
+import java.time.LocalDate;
+
+public class Main {
+	public static void main(String[] args) {
+		CustOrderFactory custFactory = new CustOrderFactory();
+		Customer cust = custFactory.createCustomer("Bob");
+		
+		Order order = custFactory.createOrder(LocalDate.now());
+		
+		order.addItem("Shirt");
+		order.addItem("Laptop");
+
+		order = order.newOrder(cust, LocalDate.now());
+		order.addItem("Pants");
+		order.addItem("Knife set");
+
+		System.out.println(cust.getOrders());
+	}
+}
+
+		

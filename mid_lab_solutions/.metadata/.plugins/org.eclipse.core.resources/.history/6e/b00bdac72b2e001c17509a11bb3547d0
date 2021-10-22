@@ -1,0 +1,9 @@
+package getputwildcard;
+
+public class GetPutPrinciple {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

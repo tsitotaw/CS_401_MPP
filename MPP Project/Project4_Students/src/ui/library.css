@@ -1,0 +1,59 @@
+#top-container{
+     -fx-background-color: #ccd2d9/*#8E0000*/
+}
+
+#checkout-grid{
+     -fx-background-color: #ccd2d9
+}
+
+#admin-grid{
+     -fx-background-color: #ccd2d9
+}
+
+#gridmember{
+     -fx-background-color: #ccd2d9
+}
+
+
+#gridbook{
+     -fx-background-color: #ccd2d9
+}
+		
+		
+#gridAddBookCopy{
+     -fx-background-color: #ccd2d9
+}
+
+
+#gridBookAllinfo{
+     -fx-background-color: #ccd2d9
+}
+
+
+#gridMembersinfo{
+     -fx-background-color: #ccd2d9
+}
+
+#gridCheckout{
+     -fx-background-color: #ccd2d9
+}
+
+
+#gridPrintCheckout{
+     -fx-background-color: #ccd2d9
+}
+
+#bPane{
+     -fx-background-color: #ccd2d9
+}
+
+
+.label {
+   -fx-text-fill: #000099;
+}
+
+.button {  
+    -fx-font : 14px "serief";  
+    -fx-padding : 5;  
+    -fx-background-color : #5e98d1;  
+}

@@ -1,0 +1,14 @@
+package upperbound;
+
+public class Manager implements IManEmp{
+
+	public Manager(String name) {
+	}
+
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

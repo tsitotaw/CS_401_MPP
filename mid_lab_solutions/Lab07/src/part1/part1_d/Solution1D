@@ -1,0 +1,22 @@
+HashMap is used to track duplicates and equals and hashCode have been implemented correctly in Employee.
+
+However, values in the HashMap are modified while it is updated, 
+leading to incorrect results (violating principle that keys should be immutable)
+
+HashMap is used to store the data in key, value pair where key is unique and value can be store or retrieve using the key.
+Any class can be a candidate for the map key if it follows below rules.
+
+1. Overrides hashcode() and equals() method.
+	Map stores the data using hashcode() and equals() method from key. To store a value against a given key, 
+	map first calls key's hashcode() and 	then uses it to calculate the index position in backed array by 
+	applying some hashing function.
+	
+	Then it will iterate through all the element and will check the equality with key by calling it's equals() method 
+	if a match is found, it will update the value with the new value 
+	otherwise it will add the new entry with given key and value
+	
+2. Key class should be immutable.
+	If not immutable and we try to search the map for this key, 
+	it may not find a value as it's hashcode is changed and hashmap has calculated different index position for this key.
+	Now if we call the put() method on map with this key, 
+	it will store this object at different position and bucket in the hashmap instead of updating

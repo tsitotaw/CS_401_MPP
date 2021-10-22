@@ -1,0 +1,19 @@
+package prob3;
+
+import java.time.LocalDate;
+import java.util.Iterator;
+import java.util.List;
+import helperclasses.Book;
+import helperclasses.LibraryMember;
+
+public class MyLambdaLibrary {
+
+	public static LibraryMember getWinnnerMember(List<LibraryMember> mems, Iterator<Book> specialBooks) {
+
+		return mems.stream()
+				.filter(MyPredicateFunctionWithException.wrapper(mem -> mem
+						.checkout(specialBooks.next().getNextAvailableCopy(), LocalDate.now(), LocalDate.of(2010, 9, 1))
+						.getCheckoutRecordEntries().size() == 10))
+				.findFirst().orElse(null);
+	}
+}

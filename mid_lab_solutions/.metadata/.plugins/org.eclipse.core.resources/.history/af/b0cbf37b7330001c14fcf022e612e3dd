@@ -1,0 +1,13 @@
+package exceptions_practice;
+
+import java.util.function.Function;
+
+public interface FunctionWithException<T, R> {
+	R apply(T t) throws Exception;
+	
+	public static <T,R> Function<T, R> wrapper(FunctionWithException<T, R> fe){
+		return {
+			
+		};
+	}
+}

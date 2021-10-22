@@ -1,0 +1,14 @@
+package probC;
+
+public class Commmissioned extends Employee{
+
+	private Double commision;
+	private Double baseSalary;
+	
+	private List<Order> orders;
+	@Override
+	Double calcGrossPay(int month, int year) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

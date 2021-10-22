@@ -1,0 +1,2 @@
+Since now we are using default methods, we can reduce the code repetition here and there by adding common implementations
+as default methods

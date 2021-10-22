@@ -1,0 +1,10 @@
+ArrayList implements the following interfaces:
+			- List
+			- Iterable
+			- Serializable 
+			- RandomAccess
+			- Cloneable
+			- Collection
+
+ArrayList extends one class
+	  - AbstractList

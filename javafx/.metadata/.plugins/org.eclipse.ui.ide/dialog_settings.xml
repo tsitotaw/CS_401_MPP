@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/home/tfisseha/Documents/MIU Class Files/CS_401_MPP/InClassExercises"/>
+			<item value="/home/tfisseha/Desktop/library-management-system"/>
+			<item value="/home/tfisseha/Documents/MIU Class Files/CS_401_MPP/library-management-system"/>
+			<item value="/home/tfisseha/Documents/MIU Class Files/CS_401_MPP/MPP Project/Project4_Students"/>
+			<item value="/home/tfisseha/Documents/MIU Class Files/CS_401_MPP/Labs/Lab3/lab3_soln"/>
+			<item value="/home/tfisseha/Documents/MIU Class Files/CS_401_MPP/ProjectSwing_StartupCode"/>
+			<item value="/home/tfisseha/Documents/MIU Class Files/CS_401_MPP/LoginRegisterApp"/>
+			<item value="/home/tfisseha/Documents/MIU Class Files/CS_401_MPP/javafx/NewJavaFX"/>
+			<item value="/home/tfisseha/Documents/MIU Class Files/CS_401_MPP/Labs/Lab6/lesson6-1"/>
+			<item value="/home/tfisseha/Documents/MIU Class Files/CS_401_MPP/Lecture_Code/lesson2"/>
+			<item value="/home/tfisseha/Documents/MIU Class Files/CS_401_MPP/Labs/Lab4/Soln_PartC"/>
+			<item value="/home/tfisseha/Documents/MIU Class Files/CS_401_MPP/Lecture_Code/lesson5"/>
+			<item value="/home/tfisseha/Documents/MIU Class Files/CS_401_MPP/Lecture_Code/lesson4"/>
+			<item value="/home/tfisseha/Documents/MIU Class Files/CS_401_MPP/Lecture_Code/lesson3"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.fx.ide.jdt.ui.javafx"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.fx.ide"/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="580"/>
+		<item key="DIALOG_Y_ORIGIN" value="322"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+</section>

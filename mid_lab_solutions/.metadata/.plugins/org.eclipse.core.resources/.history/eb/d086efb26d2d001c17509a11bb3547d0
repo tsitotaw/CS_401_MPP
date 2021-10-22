@@ -1,0 +1,22 @@
+package exercise9;
+
+import java.util.function.Function;
+import java.util.function.IntUnaryOperator;
+import java.util.function.UnaryOperator;
+import java.util.stream.IntStream;
+
+public class Main {
+	static int count = 1;
+	
+	public static void main(String[] args) {
+		printSquares(4);
+	}
+
+	public static void printSquares(int num) {
+		IntUnaryOperator squareNum = n -> n*n;
+		
+		IntStream intStream = IntStream.iterate(1,squareNum).limit(num); 
+		
+		intStream.forEach(i -> System.out.print(i+" "));
+	}
+}

@@ -1,0 +1,29 @@
+package prob1;
+
+import java.util.function.BiPredicate;
+
+//work with this lambda expression:   (Double x, Double y) -> x * y < x + y
+public class Problem1 {
+	// name and type of lambda goes here
+	BiPredicate<Double, Double> bipredicate1 = (Double x, Double y) -> x * y < x + y;
+	
+	// representing lambda as a method reference
+	
+	
+	
+	//representing lambda as a static nested class
+	
+	
+	//evaluate with Double inputs 2.1, 0.35
+	public void evaluator() {
+		
+		
+		
+	}
+	public static void main(String[] args) {
+		Problem1 p = new Problem1();
+		p.evaluator();
+	}
+	
+	
+}

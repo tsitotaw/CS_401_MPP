@@ -1,0 +1,30 @@
+package prob2;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Building {
+	private double cost;
+	private List<Apartment> apartments;
+	
+	
+	
+	public Building(double cost) {
+		this.cost = cost;
+		this.apartments = new ArrayList<>();
+	}
+	public double getCost() {
+		return cost;
+	}
+	public void setCost(double cost) {
+		this.cost = cost;
+	}
+	public List<Apartment> getApartments() {
+		return apartments;
+	}
+	public void setApartments(List<Apartment> apartments) {
+		this.apartments = apartments;
+	}
+	
+	
+}

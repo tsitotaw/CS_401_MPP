@@ -1,0 +1,6 @@
+package upperbound;
+
+public class Manager extends Employee{
+
+
+}

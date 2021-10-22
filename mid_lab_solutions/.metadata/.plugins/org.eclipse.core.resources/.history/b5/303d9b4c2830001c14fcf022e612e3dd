@@ -1,0 +1,8 @@
+package question2;
+
+public class Book extends LendingItem{
+	private String isbn;
+	private String title;
+	private String authorFirstName;
+	private String authorLastName;
+}

@@ -1,0 +1,32 @@
+package terminalOperations;
+
+import java.util.Arrays;
+import java.util.Optional;
+import java.util.stream.Stream;
+
+public class reducers {
+	public static void main(String[] args) {
+		String[] arr = null;
+//		Optional<String> strings = Stream.of("A", "good", "day", "to", "write", "some", "Java")
+//				.reduce((x, y) -> x + y);
+//		
+//		System.out.println(strings.orElse("NONE"));
+		
+		String[] firstArray = {"Hello" , "there"};
+		String[] secondArray = {"how", "are", "you"};
+		
+//		String result = Arrays.stream(firstArray)
+//		.reduce("", (x,y) -> {
+//			return x +=y;
+//		});
+		
+		
+		
+		System.out.println(Stream.of(firstArray, secondArray)
+		        .flatMap(Stream::of)        // or, use `Arrays::stream`
+		        //.reduce("", (x,y) -> x+ " " + y));
+		        .reduce("", (x,y) -> {
+		        	return x + " " + y
+		        }));
+		}
+}

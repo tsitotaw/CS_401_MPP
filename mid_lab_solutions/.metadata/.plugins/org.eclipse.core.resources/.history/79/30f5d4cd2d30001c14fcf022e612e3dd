@@ -1,0 +1,23 @@
+package question2;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CheckoutRecord {
+	
+	private List<CheckoutRecordEntry> checkoutRecordEntry;
+	
+	
+	public CheckoutRecord() {
+		this.checkoutRecordEntry = new ArrayList<>();
+	}
+
+
+	public void addCheckoutEntry(CheckoutRecordEntry entry) {
+		this.checkoutRecordEntry.add(entry);
+	}
+	
+	public List<CheckoutRecordEntry> getCheckoutRecordEntry(){
+		return this.checkoutRecordEntry;
+	}
+}

@@ -1,0 +1,18 @@
+package methodreferences;
+
+import java.util.function.Consumer;
+
+public class StaticMethod {
+
+	public static void main(String[] args) {
+		Consumer<Object> myConsumer = () -> Employee.getGreeting();
+	}
+
+}
+
+class Employee {
+	
+	static void getGreeting() {
+		System.out.println("Welcome Employee");
+	}
+}

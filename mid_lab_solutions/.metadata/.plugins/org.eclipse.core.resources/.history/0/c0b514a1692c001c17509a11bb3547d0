@@ -1,0 +1,17 @@
+package methodreferences;
+
+public class InstanceMethod {
+
+	public static void main(String[] args) {
+		Runnable r = () -> new Employee2().getGreeting(); 
+		r.run();
+	}
+
+}
+
+class Employee2 {
+	
+	void getGreeting() {
+		System.out.println("Welcome Employee");
+	}
+}

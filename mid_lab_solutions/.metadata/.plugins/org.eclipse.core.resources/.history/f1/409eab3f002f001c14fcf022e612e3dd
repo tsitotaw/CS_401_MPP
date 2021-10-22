@@ -1,0 +1,5 @@
+package enumss;
+
+public enum Dim {
+
+}

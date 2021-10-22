@@ -1,0 +1,11 @@
+package part2;
+
+public final class Circle {
+	
+	private double radius;
+	
+	public double computeArea() {
+		
+		return 0.0;
+	}	
+}

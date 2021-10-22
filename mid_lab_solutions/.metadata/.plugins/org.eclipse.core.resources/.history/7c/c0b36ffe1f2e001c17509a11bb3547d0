@@ -1,0 +1,18 @@
+package refiable;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+
+	public static void main(String[] args) {
+		/** the component type of an array must be of a Refiable type
+		 * a Refiable type is a type whose type information is fully known at runtime
+		 */
+//		List<String>[] list = {
+//					new ArrayList<String>()
+//				};
+		
+	}
+
+}

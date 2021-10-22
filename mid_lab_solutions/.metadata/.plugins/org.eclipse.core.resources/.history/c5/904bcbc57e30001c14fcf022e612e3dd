@@ -1,0 +1,23 @@
+package Final.prob1.exam;
+
+import java.time.LocalDate;
+import java.util.Optional;
+import java.util.function.BiPredicate;
+import java.util.function.Predicate;
+
+public class MyLambdaLib {
+	/**
+	 * Optional<CheckoutRecordEntry> bools = record.getCheckoutEntries().stream()
+	 * .filter(entry -> entry.getDueDate().isBefore(LocalDate.now()))
+	 * .filter(entry-> !entry.getCopy().isAvailable()) .findAny()
+	 */
+	public static Predicate<CheckoutRecord> BOOK_OVERDUE = record -> record.getCheckoutEntries().stream()
+			.filter(entry -> entry.getDueDate().isBefore(LocalDate.now()))
+			.filter(entry -> !entry.getCopy().isAvailable()).count() > 0;
+			
+			
+	public static BiPredicate<LibraryMember, BookCopy> EVER_CHECKOUT_BOOK = (mem, copy) -> 
+			mem.getRecord().getCheckoutEntries().stream()
+			.filter(entry -> entry.getCopy().equals(copy))
+			.count() > 0;
+}

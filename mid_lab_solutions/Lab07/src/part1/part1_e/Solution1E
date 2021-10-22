@@ -1,0 +1,16 @@
+Inheritance is a relation between two classes where one class inherits the properties of the other class.
+Though multiple inheritance was not impossible in Java, pre java 8 - because of diamond problem.
+Two or more super classes having a method with same signature, confuuse the compiler which to use in the in the subclass.
+
+Java 8 has a solution, using interfaces - 
+we can have same default methods (same name and signature) in two different interfaces and, 
+from a class we can implement these two interfaces. when we do so, we must override the default method 
+from the class explicitly specifying the default method along with its interface name.
+
+1 - When D is a class, we need to make sure the parent interfaces use the default keyword on the method and 
+	put a default implementation - and also class D needs to override the method() method to let the compiler know
+	which to use.
+
+2 - When the type D is an interface also
+	I guess, it also is required to provide  default implementation for the confusing method and it will get precedence
+	when called.

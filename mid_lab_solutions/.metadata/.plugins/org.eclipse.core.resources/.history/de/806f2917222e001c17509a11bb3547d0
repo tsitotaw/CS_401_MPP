@@ -1,0 +1,27 @@
+package genericmethods;
+
+public class Main {
+	public static void main(String[] args) {
+		System.out.println(countOccurances(new String[] {}, "sample"));
+	}
+	
+	private static int countOccurances(String[] arr, String target) {
+		int count = 0;
+		if(target == null) {
+			for(String item : arr) {
+				if(item == null) {
+					count++;
+				}
+			}
+		}
+		else {
+			for(String item : arr) {
+				if(item.equals(target)) {
+					count++;
+				}
+			}
+		}
+		
+		return count;
+	}
+}

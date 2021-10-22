@@ -1,0 +1,19 @@
+package question2;
+
+public class LendingItem {
+	private int numCopiesLib;
+
+	public int getNumCopiesLib() {
+		return numCopiesLib;
+	}
+
+	public void setNumCopiesLib(int numCopiesLib) {
+		this.numCopiesLib = numCopiesLib;
+	}
+	
+	public void setNumCopiesInLib(int num) {
+		
+	}
+	
+	
+}

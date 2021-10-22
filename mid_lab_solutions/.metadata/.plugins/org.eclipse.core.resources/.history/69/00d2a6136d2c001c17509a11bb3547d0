@@ -1,0 +1,13 @@
+package methodreferences;
+
+public class ConstructorReference {
+
+	public static void main(String[] args) {
+
+	}
+
+}
+
+class Person {
+	
+}

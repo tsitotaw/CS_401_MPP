@@ -1,0 +1,19 @@
+Consider the following lambda expression. Can this expression be correctly typed as a BiFunction?
+	(x,y) -> {
+		List<Double> list = new ArrayList<>();
+		list.add(Math.pow(x,y));
+		list.add(x * y);
+		return list;
+	};
+	
+	=> Yes it Can - two Double parameters and a return type of List<Double>
+	
+	// implementations
+		BiFunction<Double, Double, List<Double>> bif = (x,y) -> {
+			List<Double> list = new ArrayList<>();
+			list.add(Math.pow(x,y));
+			list.add(x * y);
+			return list;
+		};
+		
+		System.out.println(bif.apply(2.0,  3.0));

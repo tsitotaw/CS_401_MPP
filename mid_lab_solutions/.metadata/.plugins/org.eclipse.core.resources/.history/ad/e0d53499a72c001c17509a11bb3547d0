@@ -1,0 +1,18 @@
+import java.util.stream.Stream;
+
+public class concat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static Stream<Integer> myIteratorStream(){
+		return Stream.iterate(1, n -> n+2).limit(5);
+	}
+	
+	public static Stream<Integer> myGeneratorStream(){
+		return Stream.iterate(1, n -> n+2).limit(5);
+	}
+
+}

@@ -1,0 +1,7 @@
+A HashMap is used to track duplicates,
+but hashCode has not been overridden in
+Employee.
+
+The List.contains(...) method is defined to use equals(Object) to decide if the argument object is "contained" by the list. 
+So, for complex objects, like Employee, in our case, we need to override equals ... 
+assuming that the default implementation is not what you need.

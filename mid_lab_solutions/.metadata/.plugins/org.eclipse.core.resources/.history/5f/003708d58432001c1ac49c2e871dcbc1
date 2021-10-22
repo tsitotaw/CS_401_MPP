@@ -1,0 +1,18 @@
+package prob3;
+
+import java.util.function.Function;
+import java.util.function.Predicate;
+
+public interface MyPredicateFunctionWithException<T> {
+	boolean test(T t) throws Exception;
+	
+	public static <T> Predicate<T> wrapper(MyPredicateFunctionWithException<T> f){
+		return x -> {
+			try {
+				return f.test(x);
+			}catch(Exception e) {
+				throw new RuntimeException("Exception thrown");
+			}
+		};
+	}
+}

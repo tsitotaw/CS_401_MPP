@@ -1,0 +1,5 @@
+package upperbound;
+
+public interface IManEmp extends Being{
+
+}

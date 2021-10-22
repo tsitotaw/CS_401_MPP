@@ -1,0 +1,17 @@
+package primitivestreams;
+
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
+public class myIntStream {
+
+	public static void main(String[] args) {
+		IntStream myInts = IntStream.range(1,100)
+				.map(x -> x*2);
+		
+		System.out.println(myInts.toArray());
+		
+		
+	}
+
+}

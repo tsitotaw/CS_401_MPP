@@ -1,0 +1,9 @@
+package upperbound;
+
+public class Manager implements Employee{
+
+	public Manager(String name) {
+		super(name);
+	}
+
+}

@@ -1,0 +1,11 @@
+package singleton;
+
+/** Threadsafe singleton implementation; eager initialization */
+public enum MySingletonEnum {
+	INSTANCE;
+	
+	private int val;
+	private MySingletonEnum(int val) {
+		this.val = val;
+	}
+}

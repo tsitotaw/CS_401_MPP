@@ -1,0 +1,5 @@
+Write a short essay discussing the relationship between an SCI principle
+of your choosing and a Computer Science principle that is relevant for
+this MPP course. Richer content will be awarded more credit.
+
+ 

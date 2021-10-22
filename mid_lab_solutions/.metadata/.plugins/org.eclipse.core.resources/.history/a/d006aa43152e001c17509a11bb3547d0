@@ -1,0 +1,9 @@
+package genericClasses;
+
+public class Main {
+
+	public static void main(String[] args) {
+		MyDictionary<Integer, String> dict = new MyDictionary<Integer, String>(1, "Tamirat");
+	}
+
+}

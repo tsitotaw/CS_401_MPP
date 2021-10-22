@@ -1,0 +1,14 @@
+package application;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+
+public class SampleController {
+	 @FXML
+	Label lblResult;
+	
+	public void updateLabel(ActionEvent event) {
+		lblResult.setText("Holalalala");
+    }
+}

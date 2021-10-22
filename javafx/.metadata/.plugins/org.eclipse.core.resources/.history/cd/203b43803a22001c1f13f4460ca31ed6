@@ -1,0 +1,13 @@
+package probC;
+
+public abstract class Employee {
+	private int empId;
+	
+	public void print() {
+		
+	}
+	
+	abstract Double calcCompensation(int month, int year);
+	
+	abstract Double calcGrossPay(int month, int year);
+}

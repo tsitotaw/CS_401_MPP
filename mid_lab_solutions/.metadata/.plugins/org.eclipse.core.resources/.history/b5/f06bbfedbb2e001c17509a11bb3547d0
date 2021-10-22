@@ -1,0 +1,14 @@
+package terminalOperations;
+
+import java.util.Optional;
+import java.util.stream.Stream;
+
+public class reducers {
+	public static void main(String[] args) {
+		Optional<String> strings = Stream.of(0);//"A", "good", "day", "to", "write", "some", "Java")
+				.reduce((x, y) -> x + y);
+		
+		System.out.println(strings.orElse("NONE"));
+		//strings.stream();
+	}
+}

@@ -1,0 +1,25 @@
+package terminalOperations;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Stream;
+
+public class reducers {
+	public static void main(String[] args) {
+				
+		String[] firstArray = {"Hello" , "there"};
+		String[] secondArray = {"how", "are", "you"};
+		
+		
+		
+		
+		System.out.println(Stream.of(firstArray, secondArray)
+		        .reduce(new String[], (result, next) -> {	
+		            String[] newList = result;
+		            //newList.add(next);
+		            return newList;
+		        }));
+		}
+}

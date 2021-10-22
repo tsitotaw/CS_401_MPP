@@ -1,0 +1,13 @@
+package exercise10;
+
+public class Snippet {
+	for(OrderItem item : orderItems) {
+					if(Optional.ofNullable(item).map((OrderItem x) -> x.getProduct())
+						   .map((Product x) -> x.getProductName())
+						   .orElse("").equals(prodName))  {					
+						return true;
+					}
+				}
+				return false;
+}
+

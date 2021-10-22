@@ -1,0 +1,30 @@
+package part3;
+
+import java.time.LocalDate;
+
+public final class CustOrderFactory {
+	public static Customer createCustomer(String name) {
+		
+		if(name == null) 
+			throw new IllegalArgumentException("Customer name cannot be null");
+		
+		Customer cust = new Customer(name);	
+		
+		Order order = new Order(LocalDate.now());
+		
+		cust.addOrder(order);
+		
+		return cust;
+	}
+	
+	public static Order createOrder(LocalDate date, Customer customer) {
+		
+		if(date == null || customer == null ) 
+			throw new IllegalArgumentException("Customer or Local date cannot be null");
+		
+		Order order = new Order(date);
+		
+		return order;
+	}
+
+}

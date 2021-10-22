@@ -1,0 +1,8 @@
+module src {
+    requires javafx.controls;
+    requires javafx.fxml;
+    requires javafx.web;
+
+    opens com.application.loginregisterapp to javafx.fxml;
+    exports com.application.loginregisterapp;
+}

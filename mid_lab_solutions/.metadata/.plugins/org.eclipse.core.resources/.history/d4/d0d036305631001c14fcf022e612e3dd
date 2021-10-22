@@ -1,0 +1,20 @@
+package terminalOperations;
+
+import java.util.Optional;
+import java.util.stream.Stream;
+
+public class reducers {
+	public static void main(String[] args) {
+		String[] arr = null;
+		Optional<String> strings = Stream.of("A", "good", "day", "to", "write", "some", "Java")
+				.reduce((x, y) -> x + y);
+		
+		System.out.println(strings.orElse("NONE"));
+		
+		String[] firstArray = {"Hello" , "there"};
+		String[] secondArray = {"how", "are", "you"};
+		
+		
+		//strings.stream();
+	}
+}

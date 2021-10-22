@@ -1,0 +1,13 @@
+package probC;
+
+public abstract class Employee {
+	private int empId;
+	
+	public void print() {
+		
+	}
+	
+	public PayCheck calcCompensation(int month, int year) {
+		return null;
+	}
+}

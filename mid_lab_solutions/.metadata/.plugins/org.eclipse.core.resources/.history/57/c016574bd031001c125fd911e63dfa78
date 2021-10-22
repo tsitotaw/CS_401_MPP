@@ -1,0 +1,10 @@
+package streams.intermediate;
+
+import java.util.stream.Stream;
+
+public class MyDistinct {
+	public static void main(String[] args) {
+		Stream<String> strm = Stream.of("sampl", "record", "smpe", "sale", "recrd");
+		strm.distinct().sorted((String a, String b) -> b.length() - a.length()).forEach(System.out::println);
+	}
+}

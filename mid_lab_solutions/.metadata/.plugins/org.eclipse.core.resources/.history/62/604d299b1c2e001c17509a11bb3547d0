@@ -1,0 +1,17 @@
+package subtyping;
+
+import java.util.Arrays;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Integer[] numsI = { 2, 3, 4 };
+
+		Number[] nums2 = numsI;
+		
+		System.out.println(Arrays.toString(numsI));
+		System.out.println(Arrays.toString(nums2));
+	}
+
+}

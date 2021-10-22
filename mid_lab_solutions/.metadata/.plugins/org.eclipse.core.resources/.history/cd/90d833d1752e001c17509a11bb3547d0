@@ -1,0 +1,31 @@
+package wildcardhelper;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class UnBoundedWildcard {
+
+	public static void main(String[] args) {
+		List<Integer> ints = Arrays.asList(1,3,5,2,32);
+		System.out.println(countList(ints));
+		System.out.println(countListGenerics(Arrays.asList("String",'C',5,true,32)));
+		System.out.println(sumListGenerics(ints));
+	}
+	
+	private static int countList(List<Integer> list) {
+		return list.size();
+	}
+	
+	private static int countListGenerics(List<?> list) {
+		return list.size();
+	}
+	
+	private static <T> int sumListGenerics(List<?> list) {
+		int sum = 0;
+		for(T ele: list) {
+			sum +=ele;
+		}
+		return ele;
+	}
+
+}

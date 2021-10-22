@@ -1,0 +1,11 @@
+package interfaceimp;
+
+public class DataAccess<T, C> implements IDataAccess<T, C>{
+
+	@Override
+	public <T> T getConnection(C c) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

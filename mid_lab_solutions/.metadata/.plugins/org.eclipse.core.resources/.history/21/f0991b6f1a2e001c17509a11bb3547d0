@@ -1,0 +1,19 @@
+package subtyping;
+
+public class CovarianceTest {
+
+	public static void main(String[] args) {
+		// primitive check
+		int num1 = 1;
+		
+		Number num2 = num1; // this will work as Number is a supertype of int
+		
+		//arrays
+		Integer[] numsI = {2,3,4};
+		
+		Number[] nums2 = numsI; // wrapper class of built in variable arrays works as well
+	}
+
+}
+
+

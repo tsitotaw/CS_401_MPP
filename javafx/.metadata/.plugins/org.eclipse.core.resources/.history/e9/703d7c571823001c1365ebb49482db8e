@@ -1,0 +1,36 @@
+package part1;
+
+public abstract class Duck {
+
+	private final FlyBehavior ﬂyBehavior;
+	private final QuackBehavior quackBehavior;
+
+	public Duck() {
+		this.ﬂyBehavior = null;
+		this.quackBehavior = null;
+	}
+	
+
+	public FlyBehavior getﬂyBehavior() {
+		return ﬂyBehavior;
+	}
+
+	public QuackBehavior getQuackBehavior() {
+		return quackBehavior;
+	}
+
+	public abstract void display();
+
+	public void fly() {
+		ﬂyBehavior.ﬂy();
+	}
+
+	public void quack() {
+		quackBehavior.quack();
+	}
+
+	public void swim() {
+		System.out.println("swimming");
+	}
+
+}

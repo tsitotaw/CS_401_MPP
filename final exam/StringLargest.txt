@@ -1,0 +1,93 @@
+
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.function.Function;
+import java.util.stream.Stream;
+
+public class Problem5 {
+	public static void main(String[] args) {
+		testCombine();
+	}
+
+	public static void testCombine() {
+		List<String> stringList1 = new ArrayList<>(Arrays.asList("A", "AB", "XYZ", "AXTU"));
+		List<Integer> integerList2 = new ArrayList<>(Arrays.asList(2, 3,4, 6));
+		System.out.println(Problem5.combine(stringList1, integerList2, new MergeTwoTypes<String, Integer>() {
+			@Override
+			public Function<? super Integer, ? extends String> map() {
+				return (x) -> Integer.toString(x);
+			}
+
+			@Override
+			public boolean isVal2Larger(String val, Integer val2) {
+				return val.length() > val2;
+			}
+		}));
+		List<Double> list1 = new ArrayList<>(Arrays.asList(2.3, 4.5));
+		List<Integer> list2 = new ArrayList<>(Arrays.asList(2, 5));
+		System.out.println(Problem5.combine(list1, list2, new MergeTwoTypes<Double, Integer>() {
+			@Override
+			public Function<? super Integer, ? extends Double> map() {
+				return ((Integer x) -> new Double(x));
+			}
+
+			@Override
+			public boolean isVal2Larger(Double val, Integer val2) {
+				return val > val2;
+			}
+		}));
+		List<String> String1 = new ArrayList<>(Arrays.asList("Alice", "Tom"));
+		List<String> String2 = new ArrayList<>(Arrays.asList("Bob", "Richard"));
+		System.out.println(Problem5.combine(String1, String2, new MergeTwoTypes<String, String>() {
+			@Override
+			public Function<? super String, ? extends String> map() {
+				return ((String x) -> new String(x));
+			}
+
+			@Override
+			public boolean isVal2Larger(String val, String val2) {
+				return val.compareTo(val2)>0;
+			}
+		}));
+		
+	}
+
+	private static <T, U> List<T> combine(List<T> vals1, List<U> vals2, MergeTwoTypes<T, U> mergeTwoTypes) {
+		List<T> list = new ArrayList<>();
+		int vals2Index = 0;
+		for (T val : vals1) {
+			for (; vals2Index < vals2.size(); vals2Index++) {
+				U val2 = vals2.get(vals2Index);
+				if (mergeTwoTypes.isVal2Larger(val, val2)) {
+					list.add(mergeTwoTypes.map().apply(val2));
+				} else {
+					break;
+				}
+			}
+			list.add(val);
+		}
+		for (; vals2Index < vals2.size(); vals2Index++) {
+			U val2 = vals2.get(vals2Index);
+			list.add(mergeTwoTypes.map().apply(val2));
+		}
+		return list;
+	}
+
+	private static <T extends Comparable<? super T>> List<T> combine(List<T> vals1, List<T> vals2) {
+		List<T> list = new ArrayList<>();
+		list.addAll(vals1);
+		list.addAll(vals2);
+		Collections.sort(list);
+		return list;
+	}
+
+	interface MergeTwoTypes<T, U> {
+		boolean isVal2Larger(T val, U val2);
+
+		Function<? super U, ? extends T> map();
+	}
+}

@@ -1,0 +1,9 @@
+package upperbound;
+
+public class Employee extends Person implements IEmpBeing {
+
+	public Employee(String name) {
+		super(name);
+	}
+	
+}

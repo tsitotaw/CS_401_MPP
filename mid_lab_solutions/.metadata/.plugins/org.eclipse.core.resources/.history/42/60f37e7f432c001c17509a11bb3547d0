@@ -1,0 +1,14 @@
+package streams;
+
+import java.util.stream.Stream;
+
+public class oddNumbers {
+
+	public static void main(String[] args) {
+		
+		Stream oddStreams = Stream.iterate(1, n -> n +1);
+		oddStreams.filter(n -> n%2 != 0);
+
+	}
+
+}

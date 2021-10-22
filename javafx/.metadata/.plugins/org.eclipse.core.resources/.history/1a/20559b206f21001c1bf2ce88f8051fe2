@@ -1,0 +1,16 @@
+package prob4.refactored;
+
+public class Trailer {
+	
+	public Trailer() {
+	}
+	
+	public double computeRent() {
+		return 500;
+	}	
+
+	@Override
+	public String toString() {
+		return "Trailer [rent=" + computeRent() + "]";
+	}
+}

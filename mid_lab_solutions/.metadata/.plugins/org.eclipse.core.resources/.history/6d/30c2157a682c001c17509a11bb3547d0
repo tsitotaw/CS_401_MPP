@@ -1,0 +1,17 @@
+package methodreferences;
+
+public class StaticMethod {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class Employee {
+	
+	static void getGreeting() {
+		System.out.println("Welcome Employee");
+	}
+}

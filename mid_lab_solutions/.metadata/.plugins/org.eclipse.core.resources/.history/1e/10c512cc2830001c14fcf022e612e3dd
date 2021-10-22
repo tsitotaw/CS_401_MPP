@@ -1,0 +1,8 @@
+package question2;
+
+import java.time.LocalDate;
+
+public class CheckoutRecordEntry {
+	private LocalDate checkoutDate;
+	private LocalDate dueDate;
+}

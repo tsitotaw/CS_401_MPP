@@ -1,0 +1,21 @@
+package interfaces;
+
+public class MyConsumer implements Interface1, Interface2{
+
+	public static void main(String[] args) {
+		//new MyConsumer().display();
+		//new MyConsumer().hello();
+		//Interface1.world();
+		
+	}
+
+//	@Override
+//	public void display() {
+//		System.out.println("Display Implemented from Class");
+//	}
+//	@Override
+//	public void hello() {
+//		System.out.println("Hello From Class");
+//	}
+
+}

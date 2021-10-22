@@ -1,0 +1,5 @@
+package probC;
+
+public abstract class Employee {
+
+}

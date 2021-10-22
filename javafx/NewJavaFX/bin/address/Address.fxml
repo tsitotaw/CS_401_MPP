@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="address.AddressController">
+   <left>
+      <AnchorPane maxHeight="200.0" maxWidth="800.0" minHeight="200.0" minWidth="400.0" prefHeight="15.0" prefWidth="818.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="txtName" layoutX="41.0" layoutY="55.0" />
+            <PasswordField fx:id="txtStreet" layoutX="254.0" layoutY="55.0" />
+            <Button fx:id="btnLogin" layoutX="301.0" layoutY="154.0" mnemonicParsing="false" onAction="#updateLabel" prefHeight="24.0" prefWidth="131.0" text="Submit" />
+            <Label fx:id="lblResult" layoutX="7.0" layoutY="178.0" prefHeight="16.0" prefWidth="160.0" />
+            <TextField fx:id="txtCity" layoutX="466.0" layoutY="55.0" />
+            <Label layoutX="41.0" layoutY="39.0" text="Name" />
+            <Label layoutX="254.0" layoutY="39.0" text="Street" />
+            <Label layoutX="466.0" layoutY="39.0" text="City" />
+            <TextField fx:id="txtState" layoutX="169.0" layoutY="109.0" />
+            <TextField fx:id="txtZip" layoutX="381.0" layoutY="109.0" />
+            <Label layoutX="169.0" layoutY="89.0" text="State" />
+            <Label layoutX="381.0" layoutY="89.0" text="Zip" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

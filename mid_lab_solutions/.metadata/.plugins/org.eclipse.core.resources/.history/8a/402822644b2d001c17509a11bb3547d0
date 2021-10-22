@@ -1,0 +1,32 @@
+package collectors;
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+public class toMap {
+	public static void main(String[] args) {
+		System.out.println(sortedByWordLengthLambda2());
+	}
+
+	static HashMap<Integer, String> sortedByWordLengthLambda2(){
+		Map<Integer, String> words = new HashMap<Integer,String>();
+		
+		words.put(1, "Tom");
+		words.put(2, "Tamirat");
+		words.put(3, "Abebe");
+		words.put(4, "Molla");
+		words.put(5, "Tom");
+		
+		Function<String, Integer> sortByLength = x -> x.length();
+		
+		return words.stream()
+				.sorted(Comparator.comparing(sortByLength))
+				.collect(Collectors.toMap(s1 -> s1.hashCode(), s1->s1));
+	}
+}

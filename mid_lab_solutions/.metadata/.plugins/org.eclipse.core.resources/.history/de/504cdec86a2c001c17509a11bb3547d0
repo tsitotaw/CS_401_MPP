@@ -1,0 +1,33 @@
+package methodreferences;
+
+import java.util.function.Supplier;
+import java.util.stream.Stream;
+
+public class InstanceMethod {
+
+	public static void main(String[] args) {
+		Runnable r = () -> new Employee2().getGreeting(); 
+		r.run();
+		
+		Runnable r2 = new Employee2()::getGreeting;
+		r2.run();
+		
+		Supplier<String> sup = new Employee2()::getGreetingString;
+		sup.get();
+		
+		//Stream<String> strm = Stream.generate(r2);
+	}
+
+}
+
+class Employee2 {
+	
+	void getGreeting() {
+		System.out.println(this.getGreetingString());
+	}
+	
+	String getGreetingString() {
+		return "Welcome Employee";
+	}
+
+}

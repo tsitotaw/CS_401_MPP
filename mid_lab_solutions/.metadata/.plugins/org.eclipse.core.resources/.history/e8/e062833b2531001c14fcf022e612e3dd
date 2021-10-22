@@ -1,0 +1,11 @@
+package prob4;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class FunctionImplementor {
+
+	public static String verifyWord(List<String> words) {
+		return words.stream().map(MyExceptionFunction.helper(n-> n / factor)).collect(Collectors.toList());
+	}
+}

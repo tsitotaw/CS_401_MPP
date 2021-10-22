@@ -1,0 +1,6 @@
+package prob4;
+
+public interface MyExceptionFunction<T,R> {
+	
+	R apply(T t) throws Exception;
+}

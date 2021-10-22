@@ -1,0 +1,20 @@
+package prob3;
+
+import java.time.LocalDate;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import helperclasses.LibraryMember;
+
+public class MyLambdaLibrary {
+
+	public static boolean scale(List<LibraryMember> mems) {
+		return values.stream().map(FunctionWithException.wrapper(n-> n / factor)).collect(Collectors.toList());
+		
+		mems.stream()
+		.filter(MyPredicateFunctionWithException.wrapper(
+				mem -> mem.checkout(specialBooks.next().getNextAvailableCopy(), LocalDate.now(), LocalDate.of(2015, 9, 1))
+          .getCheckoutRecordEntries().size() == 10))
+    .findFirst().orElse(null);
+	}
+}

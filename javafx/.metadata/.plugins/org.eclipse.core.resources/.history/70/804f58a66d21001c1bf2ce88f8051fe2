@@ -1,0 +1,21 @@
+package prob4;
+
+public class Trailer {
+	private double rent;
+	
+	public Trailer(double rent) {
+		this.rent = rent;
+	}
+	
+	public double getRent() {
+		return rent;
+	}
+	public void setRent(double rent) {
+		this.rent = rent;
+	}
+
+	@Override
+	public String toString() {
+		return "Trailer [rent=" + rent + "]";
+	}
+}

@@ -1,0 +1,13 @@
+package prob3.inheritance;
+
+public class Circle extends Cylinder{
+
+	public Circle(double radius) {
+		super(1, radius);
+	}
+	
+	public double computeArea() {
+		super(1,this.getRadius()).computeVolume();
+	}
+
+}

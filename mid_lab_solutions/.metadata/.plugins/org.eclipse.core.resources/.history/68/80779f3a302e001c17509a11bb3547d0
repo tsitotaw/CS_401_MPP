@@ -1,0 +1,9 @@
+package wildcardhelper;
+
+public class helperMethod {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

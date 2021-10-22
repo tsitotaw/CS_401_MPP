@@ -1,0 +1,22 @@
+public static void main(String[] args) {
+		System.out.println(allWhoseZipContains3());
+		System.out.println(allHavingAtLeastTwoCopies());
+		System.out.println(allHavingMultipleAuthors());
+	}
+	
+	1 - allWhoseZipContains3
+	public static List<String> allWhoseZipContains3() {
+		DataAccess da = new DataAccessFacade();
+		Collection<LibraryMember> members = da.readMemberMap().values();
+		List<LibraryMember> mems = new ArrayList<>();
+		mems.addAll(members);
+		
+		//Returns a list of all ids of LibraryMembers whose zipcode contains the digit 3
+		
+		return mems.stream()
+			.filter(mem -> mem.Address.zipcode.contains("3"))
+			.map(e -> e.id)
+			.collect(Collectors.toList());
+		
+		
+	}

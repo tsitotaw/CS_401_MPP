@@ -1,0 +1,7 @@
+package part1;
+
+public final class Squeak implements QuackBehavior {
+	public void quack() {
+		System.out.println("Squeak");
+	}
+}

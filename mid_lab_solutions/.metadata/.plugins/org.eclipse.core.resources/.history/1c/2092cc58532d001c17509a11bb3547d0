@@ -1,0 +1,12 @@
+package streamreuse;
+
+import java.util.function.BiFunction;
+
+public class functionOption {
+	static final BiFunction<List<String>, String, Stream<String>>
+	public static void main(String[] args) {
+		
+
+	}
+
+}

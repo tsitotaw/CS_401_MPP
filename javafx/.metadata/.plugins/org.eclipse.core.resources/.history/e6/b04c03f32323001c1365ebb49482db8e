@@ -1,0 +1,14 @@
+package part3;
+
+public final class CustOrderFactory2{
+private CustOrderFactory2(){}
+	
+	public static CustOrderFactory2 createCustomerAndOrder(
+			String name, String grade) {
+		Customer g = new Customer(grade);
+		Order st = new Order(name);
+		g.setStudent(st);
+		st.setReport(g);
+		return new StudentAndReportImpl(st, g);
+	}
+}

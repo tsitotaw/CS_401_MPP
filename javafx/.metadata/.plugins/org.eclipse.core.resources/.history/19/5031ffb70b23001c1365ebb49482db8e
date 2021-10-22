@@ -1,0 +1,12 @@
+package part1;
+
+public class DecoyDuck extends Duck {
+	public DecoyDuck() {
+		quackBehavior = new Quack();
+		ﬂyBehavior = new FlyWithWings();
+	}
+
+	public void display() {
+		System.out.println("I’m a Rubber Duck");
+	}
+}

@@ -1,0 +1,9 @@
+package streams.creation;
+
+public class ByStreamUsingInterator {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

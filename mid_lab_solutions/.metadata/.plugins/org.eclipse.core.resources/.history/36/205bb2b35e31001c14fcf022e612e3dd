@@ -1,0 +1,32 @@
+package terminalOperations;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Stream;
+
+public class reducers {
+	public static void main(String[] args) {
+
+		List<String> firstArray = Arrays.asList("Hello", "there");
+		List<String> secondArray = Arrays.asList("how", "are", "you");
+		
+		String[] firstArray1 = {"Hello", "there"};
+		String[] secondArray1 = {"how", "are", "you"};
+
+		System.out.println(Stream.of(firstArray1, secondArray1).reduce(new ArrayList<String>(), (result, next) -> {
+			List<String> newList = new ArrayList<String>(result);
+			newList.addAll(next);
+			return newList;
+		}));
+
+		
+		Stream.of(firstArray, secondArray).reduce(new ArrayList<String>(), (result, next) -> {
+			List<String> newList = new ArrayList<String>(result);
+			newList.addAll(next);
+			return newList;
+		});
+
+	}
+}

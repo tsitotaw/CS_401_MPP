@@ -1,0 +1,35 @@
+Question 1 (2 points) Explain polymorphism and why it is important.
+Message to method biding in the presence of subtype abstractions. Polymorphism is achieved using late binding that depends on the runtime type of the object. It allows me to program my code using abstract classes and interfaces and not depend on not concrete types.
+ 
+Question 2 (2 points) Explain the open close principle and give an example.
+Open for extension and close for modification. Java Swing Framework for developing GUI applications in Java is an example of code that adheres to the open close principle. If I need to create a new JFrame I do not change the existing code for that class I extend it with a new class that implemnts my requirments.
+
+Question 3 (2 points) Explain early binding and when it is possible.
+Early binding is static binding or binding of the message (a method call) to method body at compile time. It is possible in the case where the compiler has engouh information to decide which method body is going to be invoked as a result of a given method call. It is possible in the case of private methods, static and final methods where inheritence is not polymorphic.
+
+Question 4 (2 points) Explain late binding and why it is needed.B
+Binding of the message (a method call) to a method body at runtime depending on the concrete type of the object or the runtime type of the object. The compiler does not have enough information at compile time to know which method body should be called. It is deferred to the runtime because it needs the concrete type of the object to decide which version of the method is going to be invoked (the most overriden method in the inheritance hierarchy)
+
+Question 5 (2 points) Explain programming to an interface and what are the advantages of doing so.
+Programing my code to depend on abstract classes and interfaces rather than on concrete types. When I program to an interface my code is extensible and adeheres to the open close principle.
+
+Question 6 (2 points) Explain Factory design pattern and why is it important
+Like a constructor of a calss a factory encapsulates the logic of object creation. Unlike a constructor a factory is not required to return a new object instance of the class every time it is invoked. It can be used to restric access to a constructor and to enforce relationships to prevent arbitrary creation of objects. It can also be used to control how many instances of a given type are created
+
+Question 7 (2 points) List at three advantages of using a Factory method over using the constructor 
+It has a descriptive name, whereas a constructor has a fixed name. 
+It can return a subtype of the type or an object implementing an interface.
+It doesn't have to return an instance every time.
+It solves the problem of overloaded constructors with same signatures.
+
+Question 8 (2 points) Explain Template Method design pattern and how it is useful
+In this pattern parts of the task the template method wants to accomplish are declared as abstract and deffered to concrete types to define them. The concrete types define the specifites of the subtasks (the abstract methods) which will then be invoked by the template method using polymorphism.
+
+Question 9 (2 points) Explain  Listener design pattern and give an example of its application
+In the Listener design pattern an object subscribes to be notified when an event happens. We used this pattern when we wanted to bind an event handler to an event so that the code is executed when the event is triggered.
+
+Question 10 (2 points) Explain the Façade design pattern and give an example of how it is useful for information hiding in subsystem design
+A facade is an entry point to a subsystem, it simplifies the task of using the subsystem and hides the details of how the classes of the subsystem interact with each other. When I use a subsystem through its facade my code is decoupled from the subsystem details. This allows the subsystem to change without affecting other parts of the system.
+
+Question 11 (2 points) Explain  The Singelton design pattern and show how you implement it.
+The singelton restricts the number of instaces that can be created from a given type to only one instance. It can be implemented using a public static factory method and restricting the constructor to be private, to make it inaccessible outside the current type.

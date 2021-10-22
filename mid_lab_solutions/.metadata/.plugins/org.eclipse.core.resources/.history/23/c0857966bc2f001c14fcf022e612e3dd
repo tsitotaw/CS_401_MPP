@@ -1,0 +1,28 @@
+package exercise_4;
+
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class PrimeStream {
+	
+	public static void main(String[] args) {
+		PrimeStream ps = new PrimeStream(); //PrimeStream is enclosing class
+		ps.printFirstNPrimes(10);
+		System.out.println("====");
+		ps.printFirstNPrimes(5);
+	}
+	
+	private void printFirstNPrimes(long n) {
+		System.out.println(
+				getStream(n)
+				.collect(Collectors.toList())
+		);
+		
+	}
+	
+	private Stream<Integer> getStream(long len){
+		return Stream.iterate(1, n -> n+1)
+				.limit(len);
+	}
+
+}

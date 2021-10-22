@@ -1,0 +1,13 @@
+package upperbound;
+
+public class Employee implements IEmpBeing {
+
+	public Employee(String name) {
+	}
+
+	@Override
+	public String getName() {
+		return "Employee";
+	}
+	
+}

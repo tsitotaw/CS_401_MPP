@@ -1,0 +1,26 @@
+package exercise4;
+
+import java.util.List;
+import java.util.stream.Stream;
+
+public class PrimeStream {
+
+	final Stream<Integer> primes = firstNPrimes();
+	
+	public static void main(String[] args) {
+		PrimeStream ps = new PrimeStream();
+		ps.printFirstNPrimes(10);
+		System.out.println("====");
+		ps.printFirstNPrimes(5);
+	}
+	
+	void printFirstNPrimes(long n) {
+		firstNPrimes().limit(n).forEach(System.out::println);
+	}
+
+	public Stream<Integer> firstNPrimes() {
+		return Stream.iterate(2, (ele) -> {
+			return ele*2;
+		});   	     
+	}
+}

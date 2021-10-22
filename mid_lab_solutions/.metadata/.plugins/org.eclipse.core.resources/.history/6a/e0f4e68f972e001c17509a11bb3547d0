@@ -1,0 +1,22 @@
+package upperbound;
+
+import java.util.List;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Manager man = new Manager("Assad");
+	}
+	
+	public static <T extends Comparable<T>> T maxUsingGenerics(List<? extends T> list) {
+		T max = list.get(0);
+		for(T i: list) {
+			if(i.compareTo(max) > 0) {
+				max = i;
+			}
+		}
+		
+		return max;
+	}
+
+}

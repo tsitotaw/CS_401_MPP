@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javafx.event.ActionEvent"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.Label"/>
+    <fullyQualifiedTypeName name="javafx.fxml.FXML"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
+    <fullyQualifiedTypeName name="javafx.scene.layout.Background"/>
+    <fullyQualifiedTypeName name="prob1.Person"/>
+    <fullyQualifiedTypeName name="prob1.PersonWithJob"/>
+    <fullyQualifiedTypeName name="prob2.Apartment"/>
+    <fullyQualifiedTypeName name="prob2.Building"/>
+    <fullyQualifiedTypeName name="prob3.composition.Cylinder"/>
+    <fullyQualifiedTypeName name="prob4.refactored.Property"/>
+    <fullyQualifiedTypeName name="probC.PayCheck"/>
+    <fullyQualifiedTypeName name="probC.Employee"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="part1.MuteQuack"/>
+    <fullyQualifiedTypeName name="part1.CannotFly"/>
+    <fullyQualifiedTypeName name="part1.MallardDuck"/>
+    <fullyQualifiedTypeName name="part1.DecoyDuck"/>
+    <fullyQualifiedTypeName name="part1.RedheadDuck"/>
+    <fullyQualifiedTypeName name="part1.RubberDuck"/>
+    <fullyQualifiedTypeName name="part2.Circle"/>
+    <fullyQualifiedTypeName name="part2.Rectangle"/>
+    <fullyQualifiedTypeName name="part2.Triangle"/>
+    <fullyQualifiedTypeName name="part3.CustomerAndOrder"/>
+    <fullyQualifiedTypeName name="part3.Customer"/>
+    <fullyQualifiedTypeName name="part3.Order"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="part3.CustOrderFactory"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.TextField"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="javax.swing.JTextField"/>
+    <fullyQualifiedTypeName name="librarysystem.LibrarySystem"/>
+    <fullyQualifiedTypeName name="librarysystem.LoginWindow"/>
+    <fullyQualifiedTypeName name="javax.swing.JLabel"/>
+    <fullyQualifiedTypeName name="dataaccess.Auth"/>
+    <fullyQualifiedTypeName name="business.LoginException"/>
+    <fullyQualifiedTypeName name="business.SystemController"/>
+    <fullyQualifiedTypeName name="javax.swing.JMenu"/>
+    <fullyQualifiedTypeName name="librarysystem.AddNewBookWindow"/>
+    <fullyQualifiedTypeName name="javafx.application.Platform"/>
+    <fullyQualifiedTypeName name="application.Start"/>
+</qualifiedTypeNameHistroy>

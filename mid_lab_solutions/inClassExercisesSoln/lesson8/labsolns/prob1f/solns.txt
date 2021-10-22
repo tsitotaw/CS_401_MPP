@@ -1,0 +1,8 @@
+i. parameters: none
+    free variables: s, t
+    
+ii. parameters: u, v
+    free variables: a, b
+    
+iii. paramters: s, t
+    free variables: ignoreCase

@@ -1,0 +1,16 @@
+package Final.prob1.exam;
+
+import java.time.LocalDate;
+import java.util.Optional;
+import java.util.function.Predicate;
+
+public class MyLambdaLib {
+	/**
+	 * Optional<CheckoutRecordEntry> bools = record.getCheckoutEntries().stream()
+	 * .filter(entry -> entry.getDueDate().isBefore(LocalDate.now()))
+	 * .filter(entry-> !entry.getCopy().isAvailable()) .findAny()
+	 */
+	public static Predicate<CheckoutRecord> BOOK_OVERDUE = record -> record.getCheckoutEntries().stream()
+			.filter(entry -> entry.getDueDate().isBefore(LocalDate.now()))
+			.filter(entry -> !entry.getCopy().isAvailable()).count() > 0;
+}

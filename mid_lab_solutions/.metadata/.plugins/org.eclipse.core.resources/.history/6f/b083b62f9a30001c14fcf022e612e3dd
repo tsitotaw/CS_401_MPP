@@ -1,0 +1,11 @@
+package streamexercises_15;
+
+import java.time.LocalDate;
+
+public class Order {
+	private Long id;
+	private String status;
+	private LocalDate orderDate;
+	private LocalDate deliveryDate;
+	private List<Product> products;
+}

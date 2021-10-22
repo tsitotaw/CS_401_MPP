@@ -1,0 +1,14 @@
+package streampractices;
+
+public class DataAccessFacade {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static List<String> allWhoseZipContains3() {
+	
+	}
+
+}

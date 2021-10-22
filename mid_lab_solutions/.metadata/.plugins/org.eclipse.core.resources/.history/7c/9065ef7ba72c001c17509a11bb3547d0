@@ -1,0 +1,14 @@
+import java.util.stream.Stream;
+
+public class concat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static Stream<String> myStream(){
+		return Stream.iterate(1,1+2).limit(5);
+	}
+
+}

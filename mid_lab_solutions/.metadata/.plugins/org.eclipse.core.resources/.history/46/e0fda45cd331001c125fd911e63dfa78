@@ -1,0 +1,16 @@
+package prob3;
+
+import java.util.function.Function;
+
+public interface IFunctionWithException<T,R> {
+
+	R apply(T t) throws IllegalWordException;
+	
+	public static <T, R> Function<T,R> wrapper(IFunctionWithException<T,R> f){
+		try{
+			return null;f.apply(f);
+		}catch(IllegalWordException ex) {
+			throw new RuntimeException(ex.getMessage());
+		}
+	}
+}

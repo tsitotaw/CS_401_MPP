@@ -1,0 +1,13 @@
+package subtyping;
+
+public class CovarianceTest {
+
+	public static void main(String[] args) {
+		int[] nums = {2,3,4};
+		
+		Number[] num2 = nums;
+	}
+
+}
+
+

@@ -1,0 +1,6 @@
+package genericClasses;
+
+public interface IDictionary<K extends Number, V> {
+	public <K extends Number> K getKey();
+	public V getValue(K key);
+}

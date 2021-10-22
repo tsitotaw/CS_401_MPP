@@ -1,0 +1,11 @@
+package streams.creation;
+
+public class ByStreamOfFromArray {
+
+	public static void main(String[] args) {
+		
+		int[] myScores = {1,4,3,5,7};
+
+	}
+
+}

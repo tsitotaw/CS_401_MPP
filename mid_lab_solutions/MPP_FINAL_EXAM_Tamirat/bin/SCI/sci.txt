@@ -1,0 +1,17 @@
+
+Generics and the Unified Nature
+
+The nature of Generics and how they have a one unified form but can easily be represented and manifested 
+in multiple different kinds of concrete implementations resembles with our unified being. 
+Just like Generics, we, the human beings and all the natural being have come from one unified being 
+having many common attributes while also contain different purposes and activities. 
+
+Just like default method of a Java-8 Generics, we all also share same default behavior 
+that may be manifested throughout our life but also opens a possibility to override 
+the shared default behavior so that we act in a very specialized way. 
+This special overriden behavior can be a source of new thoughts and practices that will benefit the whole universe.
+
+Again, the design of Java-8 Generics to introduce static methods also brings new similarity toward the laws of the universe and the one unified being.
+Even though, we are many and diverse and have different attributes and behaviors, their is definately a common behavior for all beings to share it together.
+One of this shared static behavior is our knowledge, understanding and conciousness and constant growing impulse of transcendence. 
+  

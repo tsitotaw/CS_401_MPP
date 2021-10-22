@@ -1,0 +1,15 @@
+package wildcardhelper;
+
+import java.util.List;
+
+public class UnBoundedWildcard {
+
+	public static void main(String[] args) {
+		
+	}
+	
+	private static int countList(List<Integer> list) {
+		return list.size()
+	}
+
+}

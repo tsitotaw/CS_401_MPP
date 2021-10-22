@@ -1,0 +1,16 @@
+package genericClasses;
+
+public class MySpecialDictionary<Integer, String> extends MyDictionary<Integer, String>{
+
+	
+	public MySpecialDictionary(Integer key, String value) {
+		//key++;
+		super(key, value);
+	}
+	
+	@Override
+	public K getKey() {
+		return super.getKey();
+	}
+
+}

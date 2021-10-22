@@ -1,0 +1,18 @@
+package part3;
+
+public final class CustOrderFactory {
+	private Customer customer;
+	private Order order;
+	
+	//package level access
+	CustOrderFactory() {	
+	}
+	
+	public Customer getCustomer() {
+		return customer;
+	}
+	
+	public Order getOrder() {
+		return order;
+	}
+}

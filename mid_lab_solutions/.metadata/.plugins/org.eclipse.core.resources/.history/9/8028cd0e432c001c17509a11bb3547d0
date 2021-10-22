@@ -1,0 +1,13 @@
+package streams;
+
+import java.util.stream.Stream;
+
+public class oddNumbers {
+
+	public static void main(String[] args) {
+		
+		System.out.println(Stream.iterate(1, n -> n +1));
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package part3;
+
+import java.time.LocalDate;
+
+public final class CustOrderFactory2{
+private CustOrderFactory2(){}
+	
+	public static CustOrderFactory2 createCustomerAndOrder(
+			String name, LocalDate localDate) {
+		Customer g = new Customer(name);
+		Order st = new Order(localDate);
+		g.setStudent(st);
+		st.setReport(g);
+		return new StudentAndReportImpl(st, g);
+	}
+}

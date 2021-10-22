@@ -1,0 +1,25 @@
+package exercises._9_3;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class Account {
+	private String ownerName;
+	private int balance;
+	private int acctId;
+	
+	public Account(String ownerName, int balance, int acctId) {
+		super();
+		this.ownerName = ownerName;
+		this.balance = balance;
+		this.acctId = acctId;
+	}
+	
+	
+}

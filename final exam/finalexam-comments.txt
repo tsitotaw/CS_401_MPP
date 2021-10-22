@@ -1,0 +1,38 @@
+//Comments for Problem 1
+{0} Grading 1A and 1B
+{1} Grading 1A and 1C
+{2} Grading 1B and 1C
+{3} 1A: Criterion for determining whether two book copies are equal is not correct
+{4} 1A: the type of method reference is incorrect (should be class::staticMethod)
+{5} 1A: compiler error
+{6} 1A: no evaluator method was provided
+{7} 1B: the type of method reference is incorrect (should be class::instanceMethod)
+{8} 1B: compiler error
+{9} 1B: no evaluator method was provided
+{7} 1C: the type of method reference is incorrect (should be class::instanceMethod)
+{8} 1C: compiler error
+{9} 1C: no evaluator method was provided
+
+//Comments for Problem 3 
+{10} Output is incorrect for test data
+{11} Reduce method was not used
+{12} 
+{13} 
+{14}
+{15}
+{16} 
+{17}
+{18} 
+{19}
+
+//Comments for Problem 4 
+{20} RuntimeException should not be thrown -- instead, throw an exception that is a subtype of RuntimeException
+{21} Student's version of adjustWords still does not compile
+{22} Student has caught and handled the exception within the lambda expression. This is not one of the best practices -- the exception must be re-thrown as a RuntimeException
+{23} 
+{24}
+{25}
+{26} 
+{27}
+{28} 
+{29}

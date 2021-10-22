@@ -1,0 +1,14 @@
+package streamexercises_15;
+
+import java.util.Arrays;
+
+public class Question1 {
+
+	public static void main(String[] args) {
+		/**
+		 * Obtain a list of products belongs to category “Books” with price > 100
+		 */
+		List<Product> products = Arrays.asList(new Product(1, "Book1", "Books", 21.0))
+	}
+
+}

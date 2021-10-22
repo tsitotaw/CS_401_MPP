@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;FinalExamStudy_Generics/src/wildcardhelper&apos;&#x0A;- Original project: &apos;inClassExercisesSoln&apos;&#x0A;- Destination element: &apos;FinalExamStudy_Generics/src/wildcardhelper&apos;&#x0A;- Original elements:&#x0A;     lesson11.exercise_4_soln.Reverse.java&#x0A;     lesson11.exercise_4_soln.Person.java" description="Copy compilation units" destination="=FinalExamStudy_Generics/src&lt;wildcardhelper" element1="/&lt;lesson11.exercise_4_soln{Reverse.java" element2="/&lt;lesson11.exercise_4_soln{Person.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1634354754543" units="2" version="1.0"/>
+</session>

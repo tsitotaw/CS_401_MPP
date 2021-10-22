@@ -1,0 +1,28 @@
+package subtyping;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class CovarianceTest {
+
+	public static void main(String[] args) {
+		// primitive check
+		int num1 = 1;
+		
+		Number num2 = num1; // this will work as Number is a supertype of int
+		
+		Employee emp1 = new Employee();
+		
+		//arrays
+		Integer[] numsI = {2,3,4};
+		
+		Number[] nums2 = numsI; // wrapper class of built in variable arrays works as well
+		
+		List<Manager> manager1 = Arrays.asList(new Manager(), new Manager());
+		
+		List<Employee> employee1 = manager1; // this is not possible - type mismatch
+	}
+
+}
+
+

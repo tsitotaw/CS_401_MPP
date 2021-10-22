@@ -1,0 +1,12 @@
+package interfaceimp;
+
+public class DataAccess<T, C> implements IDataAccess<T, C>{
+
+	@Override
+	public T getConnection(C c) {
+		return c;
+	}
+
+	
+
+}

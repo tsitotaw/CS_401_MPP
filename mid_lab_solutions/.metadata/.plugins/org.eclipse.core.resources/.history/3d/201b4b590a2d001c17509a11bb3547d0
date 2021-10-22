@@ -1,0 +1,69 @@
+package exercises._9_3;
+
+import java.util.Objects;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class Account {
+	private String ownerName;
+	private int balance;
+	private int acctId;
+	
+	public Account(String ownerName, int balance, int acctId) {
+		super();
+		this.ownerName = ownerName;
+		this.balance = balance;
+		this.acctId = acctId;
+	}
+
+	public String getOwnerName() {
+		return ownerName;
+	}
+
+	public void setOwnerName(String ownerName) {
+		this.ownerName = ownerName;
+	}
+
+	public int getBalance() {
+		return balance;
+	}
+
+	public void setBalance(int balance) {
+		this.balance = balance;
+	}
+
+	public int getAcctId() {
+		return acctId;
+	}
+
+	public void setAcctId(int acctId) {
+		this.acctId = acctId;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(acctId, balance, ownerName);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Account other = (Account) obj;
+		return acctId == other.acctId && balance == other.balance && Objects.equals(ownerName, other.ownerName);
+	}
+	
+	
+	
+}

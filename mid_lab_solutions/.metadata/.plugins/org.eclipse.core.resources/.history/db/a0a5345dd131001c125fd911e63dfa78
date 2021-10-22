@@ -1,0 +1,17 @@
+package streams.intermediate;
+
+import java.util.stream.Stream;
+
+public class MyMap {
+
+	public static void main(String[] args) {
+		Stream<String> strm = Stream.of("Holla", "Hsjs", "shdjs");
+		
+		strm
+			.filter(x -> x.length() > 3) // Predicate<T, Boolean>
+			.map(x -> x.toUpperCase())   // Function<T,R>
+			.map(x -> x.toLowerCase())
+			.forEach(System.out::println);
+	}
+
+}

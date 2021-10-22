@@ -1,0 +1,17 @@
+package primitivestreams;
+
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
+public class myIntStream {
+
+	public static void main(String[] args) {
+		IntStream myInts = IntStream.of(1,4,2,12,56,75,3)
+				.map(x -> x*2);
+		
+		myInts.count();
+		
+		
+	}
+
+}

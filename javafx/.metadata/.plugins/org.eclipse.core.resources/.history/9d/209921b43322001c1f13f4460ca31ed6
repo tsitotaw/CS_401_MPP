@@ -1,0 +1,7 @@
+package probC;
+
+public class Hourly {
+
+	private int hourlyWage;
+	private int hoursPerWeek;
+}

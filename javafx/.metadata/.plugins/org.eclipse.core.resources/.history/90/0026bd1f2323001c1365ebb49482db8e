@@ -1,0 +1,21 @@
+package part3;
+
+public final class CustOrderFactory {
+	private GradeReport report;
+	private String name;
+	
+	//package level access
+	Student(String nm) {
+		name = nm;
+	}
+	public String getName() {
+		return name;
+	}
+	//package level access
+	void setReport(GradeReport report) {
+		this.report = report;
+	}
+	public GradeReport getReport() {
+		return report;
+	}
+}

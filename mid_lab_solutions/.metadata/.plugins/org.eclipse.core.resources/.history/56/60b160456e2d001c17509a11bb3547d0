@@ -1,0 +1,23 @@
+package exercise9;
+
+import java.util.function.Function;
+import java.util.function.UnaryOperator;
+import java.util.stream.IntStream;
+
+public class Main {
+	static int count = 1;
+	
+	public static void main(String[] args) {
+		printSquares(4);
+	}
+
+	public static void printSquares(int num) {
+		UnaryOperator<Integer> squareNum = n -> n*n;
+		IntStream intStream = IntStream.iterate(1,n -> n*n).limit(num); 		
+		intStream.forEach(i -> System.out.print(i+" "));
+	}
+	
+	public static int calcSquare(int num) {
+		return (int)Math.pow(num, 2);
+	}
+}

@@ -1,0 +1,14 @@
+package genericClasses;
+
+public class MySpecialDictionary<K, V> extends MyDictionary<K, V>{
+
+	public MySpecialDictionary(K key, V value) {
+		super(key, value);
+	}
+	
+	@Override
+	public K getKey() {
+		return super.getKey()*33;
+	}
+
+}

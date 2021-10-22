@@ -1,0 +1,48 @@
+package question2;
+
+import java.util.Objects;
+
+public class CD {
+	
+	private String productId;
+	private String title;
+	private String company;
+	
+	public String getProductId() {
+		return productId;
+	}
+	public void setProductId(String productId) {
+		this.productId = productId;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public String getCompany() {
+		return company;
+	}
+	public void setCompany(String company) {
+		this.company = company;
+	}
+	
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(company, productId, title);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		CD other = (CD) obj;
+		return Objects.equals(company, other.company) && Objects.equals(productId, other.productId)
+				&& Objects.equals(title, other.title);
+	}
+	
+}

@@ -1,0 +1,11 @@
+package genericmethods;
+
+public class Main {
+	public static void main(String[] args) {
+		
+	}
+	
+	private static int countOccurances(String[] arr, String target) {
+		int count = 0;
+	}
+}

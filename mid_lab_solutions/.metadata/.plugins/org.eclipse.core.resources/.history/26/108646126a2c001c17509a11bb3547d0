@@ -1,0 +1,20 @@
+package methodreferences;
+
+public class InstanceMethod {
+
+	public static void main(String[] args) {
+		Runnable r = () -> new Employee2().getGreeting(); 
+		r.run();
+		
+		Runnable r2 = new Employee2()::getGreeting;
+		r2.run();
+	}
+
+}
+
+class Employee2 {
+	
+	void getGreeting() {
+		System.out.println("Welcome Employee");
+	}
+}

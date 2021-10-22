@@ -1,0 +1,22 @@
+package prob3.inheritance;
+
+public class Circle extends Cylinder{
+
+	/**
+	 * we have to pass 1 as a height for the cylinder, as circles don't have heights
+	 * @param radius
+	 */
+	public Circle(double radius) {
+		super(1, radius);
+	}
+	
+	/**
+	 * just call the superclass compute volume and all will be good
+	 * note that we have set the height to 1 during our constructor instanttiation
+	 * @return
+	 */
+	public double computeArea() {
+		return this.computeVolume();
+	}
+
+}
